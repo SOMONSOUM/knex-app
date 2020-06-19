@@ -1,0 +1,12 @@
+type Query {
+  postList: [Post]
+}
+
+type Post {
+  id: ID
+  title: String
+  content: String
+  image: String
+  userID: Int
+  categoryID: Int
+}
