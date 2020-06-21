@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "This my personal project boileplate",
   "main": "index.ts",
-  "repository": "https://github.com",
-  "author": "SOMON SOUM",
+  "repository": "https://github.com/somonsoum",
+  "author": "SOMON SOUM<somon.soum9@gmail.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
     "prettier": "prettier --write src/index.ts",
-    "dev": "nodemon --exec ts-node src/index.ts",
+    "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpileOnly --ignore-watch node_modules --no-notify src/index.ts",
     "build": "tsc",
     "start": "node build/index.js"
   },
@@ -26,10 +26,10 @@
   "devDependencies": {
     "dotenv": "^8.2.0",
     "husky": "^4.2.5",
-    "nodemon": "^2.0.4",
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
-    "ts-node": "^8.10.2"
+    "ts-node-dev": "^1.0.0-pre.49",
+    "tsconfig-paths": "^3.9.0"
   },
   "husky": {
     "hooks": {

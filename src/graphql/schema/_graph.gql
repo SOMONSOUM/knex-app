@@ -1,0 +1,24 @@
+type Query {
+  userList: [User]
+}
+
+type Mutation {
+  createUser(data: UserInput): Boolean
+}
+
+input UserInput {
+  userName: String
+  email: String
+  phoneNumber: String
+  avatar: String
+  password: String
+  profileID: Int
+}
+
+type User {
+  userName: String
+  email: String
+  phoneNumber: String
+  createAt: String
+  profile: Profile
+}

@@ -1,0 +1,12 @@
+extend type Query {
+  profileList: [Profile]
+}
+
+extend type Mutation {
+  createProfile(role: String!): Boolean
+}
+
+type Profile {
+  id: ID!
+  role: String
+}
